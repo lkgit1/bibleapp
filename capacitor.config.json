@@ -1,0 +1,8 @@
+{
+  "appId": "io.ionic.starter",
+  "appName": "bibleapp",
+  "webDir": "dist",
+  "server": {
+    "androidScheme": "https"
+  }
+}

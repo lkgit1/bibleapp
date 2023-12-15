@@ -1,0 +1,7 @@
+{
+  "name": "bibleapp",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "vue"
+}
