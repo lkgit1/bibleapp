@@ -12,6 +12,6 @@
         </ion-item>
     </ion-list>
 
-    <BackButton></BackButton>
+    <BackButton endpoint='/'></BackButton>
 </Main>
 </template>

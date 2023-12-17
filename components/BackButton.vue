@@ -1,6 +1,6 @@
 <template>
 <ion-fab slot="fixed" vertical="bottom" horizontal="end">
-    <ion-fab-button router-link="/" router-direction="back">
+    <ion-fab-button :router-link="endpoint" router-direction="back">
         <ion-icon :icon="arrowBack"></ion-icon>
     </ion-fab-button>
 </ion-fab>
@@ -8,4 +8,13 @@
 
 <script setup>
 import { arrowBack } from 'ionicons/icons';
+
+const props = defineProps({
+    endpoint: {
+        type: String,
+        required: true
+    }
+})
+
+const { endpoint } = props
 </script>
