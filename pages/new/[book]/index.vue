@@ -1,11 +1,11 @@
 <template>
-<Main title='Select Chapter'>
-    <Chapters :chapters="chapters" :book="book" testament="old"></Chapters>
-
-    <BackButton endpoint='/old'></BackButton>
-</Main>
+    <Main title='Select Chapter'>
+        <Chapters :chapters="chapters" :book="book" testament="new"></Chapters>
+    
+        <BackButton endpoint='/new'></BackButton>
+    </Main>
 </template>
-
+    
 <script setup>
 import jsonData from '/data/en_kjv.json'
 

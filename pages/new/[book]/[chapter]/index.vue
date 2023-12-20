@@ -1,9 +1,9 @@
 <template>
-<Main title='Select Verse'>
-    <VersesList :verses="verses" :book="book" :chapter="chapter" testament="old"></VersesList>
+    <Main title='Select Verse'>
+        <VersesList :verses="verses" :book="book" :chapter="chapter" testament="new"></VersesList>
 
-    <BackButton :endpoint="'/old/' + book"></BackButton>
-</Main>
+        <BackButton :endpoint="'/new/' + book"></BackButton>
+    </Main>
 </template>
 
 <script setup>

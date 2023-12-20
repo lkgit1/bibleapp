@@ -1,9 +1,9 @@
 <template>
-<Main :title='`${book} Chapter ${chapter}`'>
-    <Verses :verses="verses"></Verses>
-
-    <BackButton :endpoint="'/old/'+ bookAbbrev +'/' + chapter"></BackButton>
-</Main>
+    <Main :title='`${book} Chapter ${chapter}`'>
+        <Verses :verses="verses"></Verses>
+    
+        <BackButton :endpoint="'/new/'+ bookAbbrev +'/' + chapter"></BackButton>
+    </Main>
 </template>
 
 <script setup>

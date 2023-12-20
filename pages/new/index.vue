@@ -1,17 +1,19 @@
 <template>
-<Main title='New Testament'>
-    <ion-list inset="true">
-        <ion-item router-link="/old/genesis" button="true">
-            <ion-label>Matthew</ion-label>
-        </ion-item>
-        <ion-item router-link="/old/genesis" button="true">
-            <ion-label>Mark</ion-label>
-        </ion-item>
-        <ion-item router-link="/old/genesis" button="true">
-            <ion-label>Luke</ion-label>
-        </ion-item>
-    </ion-list>
-
-    <BackButton></BackButton>
-</Main>
-</template>
+    <Main title='Select Book'>
+        <Books :books="books" testament="new"></Books>
+    
+        <BackButton endpoint='/'></BackButton>
+    </Main>
+    </template>
+    
+    <script setup>
+    import data from '/data/en_kjv.json'
+    
+    const books = {}
+    
+    Object.keys(data).forEach((key) => {
+        if (key > 38) {
+            books[key] = data[key]
+        }
+    })
+    </script>
