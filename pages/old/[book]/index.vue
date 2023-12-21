@@ -1,9 +1,11 @@
 <template>
-<Main title='Select Chapter'>
-    <Chapters :chapters="chapters" :book="book" testament="old"></Chapters>
+<ion-page>
+    <Main title='Select Chapter'>
+        <Chapters :chapters="chapters" :book="book" testament="old"></Chapters>
 
-    <BackButton endpoint='/old'></BackButton>
-</Main>
+        <BackButton endpoint='/old'></BackButton>
+    </Main>
+</ion-page>
 </template>
 
 <script setup>

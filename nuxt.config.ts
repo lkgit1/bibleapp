@@ -2,5 +2,6 @@
 export default defineNuxtConfig({
   modules: ['@nuxtjs/ionic', '@nuxtjs/tailwindcss'],
   devtools: { enabled: true },
-  ssr: false
+  ssr: false,
+  css: ['~/assets/css/ionic.css'],
 })

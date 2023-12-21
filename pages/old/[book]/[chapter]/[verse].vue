@@ -1,9 +1,11 @@
 <template>
-<Main :title='`${book} Chapter ${chapter}`'>
-    <Verses :verses="verses"></Verses>
+<ion-page>
+    <Main :title='`${book} Chapter ${chapter}`'>
+        <Verses :verses="verses"></Verses>
 
-    <BackButton :endpoint="'/old/'+ bookAbbrev +'/' + chapter"></BackButton>
-</Main>
+        <BackButton :endpoint="'/old/'+ bookAbbrev +'/' + chapter"></BackButton>
+    </Main>
+</ion-page>
 </template>
 
 <script setup>

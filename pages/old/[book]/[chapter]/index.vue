@@ -1,9 +1,11 @@
 <template>
-<Main title='Select Verse'>
-    <VersesList :verses="verses" :book="book" :chapter="chapter" testament="old"></VersesList>
+<ion-page>
+    <Main title='Select Verse'>
+        <VersesList :verses="verses" :book="book" :chapter="chapter" testament="old"></VersesList>
 
-    <BackButton :endpoint="'/old/' + book"></BackButton>
-</Main>
+        <BackButton :endpoint="'/old/' + book"></BackButton>
+    </Main>
+</ion-page>
 </template>
 
 <script setup>
