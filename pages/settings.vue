@@ -20,6 +20,11 @@
                 <ion-text slot="end" color="medium">Ronan</ion-text>
             </ion-item>
 
+            <ion-item target="_blank" href="https://github.com/thiagobodruk/bible" button="true">
+                <ion-label>Bible DB</ion-label>
+                <ion-text slot="end" color="medium">thiagobodruk/bible</ion-text>
+            </ion-item>
+
             <ion-item>
                 <ion-label>Version</ion-label>
                 <ion-text slot="end" color="medium">{{ packageJson.version }}</ion-text>
