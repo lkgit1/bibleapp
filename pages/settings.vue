@@ -53,11 +53,11 @@ onMounted(() => {
 // Add or remove the "dark" class on the document body
 function toggleDarkMode() {
     if (darkMode) {
-        Preferences.set({key: 'dark', value: false})
+        Preferences.set({key: 'dark', value: 'false'})
         document.body.classList.remove('dark')
         darkMode = false
     } else {
-        Preferences.set({key: 'dark', value: true})
+        Preferences.set({key: 'dark', value: 'true'})
         document.body.classList.add('dark')
         darkMode = true
     }
